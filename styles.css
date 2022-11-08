@@ -36,6 +36,11 @@ body{
     font-size: 2em;
 }
 
+#githubLink a{
+    color: #f7fcff;
+    text-decoration: none;
+}
+
 /**/
 #firstMsg{
     width: 100%;
