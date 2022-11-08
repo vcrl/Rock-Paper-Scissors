@@ -1,0 +1,107 @@
+html{
+    font-size: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #404258;
+}
+
+/**/
+.topNavigation{
+    padding: 0vh 10vw;
+    background: #50577A;
+    color: #f7fcff;
+}
+
+.topNavigation li{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topNavigation ul{
+    padding-left: 0;
+}
+
+#titleLink{
+    margin-right: auto;
+    font-weight:bold;
+    font-size: 3em;
+}
+
+#githubLink{
+    font-size: 2em;
+}
+
+/**/
+#firstMsg{
+    width: 100%;
+    color:#f7fcff;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom:2vh;
+}
+
+#secondText, #secondMsg{
+    margin:0;
+    text-align: center;
+    font-size: 2.25em;
+    color:#f7fcff;
+    margin-bottom:5vh;
+}
+
+#secondMsg{
+    text-decoration: underline;
+}
+
+/**/
+#scoreArea{
+    padding: 0vh 10vw;
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+    margin-bottom:5vh
+}
+
+#player, #computer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.weaponHolder{
+    font-size: 10em;
+    margin-bottom: 2.5vh;
+}
+
+.score{
+    margin-bottom: auto;
+    font-size: 2em;
+    color: #f7fcff;
+}
+
+/**/
+#weaponList{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.weapon{
+    transition-duration: 250ms;
+    font-size: 10em;
+    padding: 2% 2%;
+    border-radius: 0.25em;
+    background-color: #474E68;
+    flex:0;
+}
+
+.weapon:hover{
+    cursor: pointer;
+    transition-duration: 250ms;
+    background-color: #50577A;
+}

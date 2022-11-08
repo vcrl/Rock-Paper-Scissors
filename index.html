@@ -3,10 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors [Command Line Edition]</title>
-        <link href="./stylesheet.css" rel="text/css">
+        <link href="./styles.css" rel="stylesheet">
     </head>
     <body>
-        <button id="play" onclick="new Game().playRound()">Play</button>
+        <div class="topNavigation">
+            <li>
+                <ul id="titleLink">Rock, Papers, Scissors</ul>
+                <ul id="githubLink">Github</ul>
+            </li>
+        </div>
+        <h1 id="firstMsg">Rock, Paper, Scissors</h1>
+        <h3 id="secondText">First to score 5 points win the game</h3>
+        <div id="scoreArea">
+            <div id="player">
+                <div class="weaponHolder" id="playerWeapon">
+                    ❔
+                </div>
+                <h1 class="score" id="playerScore">Player: 0</h1>
+
+            </div>
+            <div id="computer">
+                <div class="weaponHolder" id="computerWeapon">
+                    ❔
+                </div>
+                <h1 class="score" id="computerScore">Computer: 0</h1>
+            </div>
+        </div>
+        <h3 id="secondMsg">Select a sign to start !</h3>
+        <div id="weaponList">
+            <div class="weapon" id="rock" onclick="G.playRound(2)">
+                ✊
+            </div>
+            <div class="weapon" id="paper" onclick="G.playRound(0)">
+                ✋
+            </div>
+            <div class="weapon" id="scissors" onclick="G.playRound(1)">
+                ✌
+            </div>
+        </div>
+        <!--<button id="play" onclick="new Game().playRound()">Play</button>-->
         <script src="./script.js"></script>
     </body>
 </html>
